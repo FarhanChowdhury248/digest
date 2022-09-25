@@ -1,0 +1,23 @@
+{
+  "name": "digest",
+  "version": "1.0.0",
+  "description": "A toy frontend framework for learning and practice.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .\\node_modules\\browserify\\bin\\cmd.js index.js -o bundle.js && browser-sync start --server --no-online --files=\"bundle.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarhanChowdhury248/digest.git"
+  },
+  "author": "Farhan Chowdhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarhanChowdhury248/digest/issues"
+  },
+  "homepage": "https://github.com/FarhanChowdhury248/digest#readme",
+  "dependencies": {
+    "browserify": "^17.0.0"
+  }
+}
