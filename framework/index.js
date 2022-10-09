@@ -1,10 +1,10 @@
+const snabbdom = require("snabbdom");
+
+const patch = snabbdom.init([]);
+
 const init = (selector, component) => {
   const app = document.querySelector(selector);
-  const newElement = document.createElement(component.type);
-  const newTextContent = document.createTextNode(component.template);
-
-  newElement.append(newTextContent);
-  app.append(newElement);
+  patch(app, component.template);
 };
 
 module.exports = { init };
